@@ -6,12 +6,24 @@ package com.redhat.consulting_br.sampleproject;
 
 public class Funcionario implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Funcionario() {
-    }
+	@org.kie.api.definition.type.Label(value = "nome")
+	private java.lang.String nome;
 
+	public Funcionario() {
+	}
 
+	public java.lang.String getNome() {
+		return this.nome;
+	}
 
+	public void setNome(java.lang.String nome) {
+		this.nome = nome;
+	}
+
+	public Funcionario(java.lang.String nome) {
+		this.nome = nome;
+	}
 
 }
