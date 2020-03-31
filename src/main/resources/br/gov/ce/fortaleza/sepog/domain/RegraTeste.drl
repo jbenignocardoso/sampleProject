@@ -8,6 +8,6 @@ dialect 'mvel'
     when
         $issueChamadoKSPessoa : IssueChamadoKSPessoa( idade > 10 )
     then
-        $issueChamadoKSPessoa.setNome("Funcionario passou pelas regras");
+        $issueChamadoKSPessoa.setName("Funcionario passou pelas regras");
         update($issueChamadoKSPessoa);
 end
