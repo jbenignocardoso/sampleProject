@@ -1,2 +1,14 @@
 package br.gov.ce.fortaleza.sepog.domain;
+import br.gov.ce.fortaleza.sepog.domain.IssueChamadoKSPessoa;
 
+//Regra criada para verificar se esta rodando as regras
+rule 'CalcularTeste'
+dialect 'mvel'
+    no-loop true
+    when
+        $issueChamadoKSPessoa : IssueChamadoKSPessoa( idade > 10 )
+    then
+        System.out.println("CHAMADA EXECUTADA NO KIE SERVER");
+        $issueChamadoKSPessoa.setNome("Funcionario passou pelas regras");
+        update($issueChamadoKSPessoa);
+end
