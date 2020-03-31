@@ -120,7 +120,7 @@
               <name>1|2</name>
               <type>EXPECT</type>
             </expressionIdentifier>
-            <rawValue class="string">asd</rawValue>
+            <rawValue class="string">Funcionario passou pelas regras</rawValue>
           </FactMappingValue>
         </factMappingValues>
       </Scenario>
